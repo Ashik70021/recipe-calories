@@ -1,0 +1,62 @@
+[
+    {
+        "recipe_image": "https://i.ibb.co/s1CgQvW/chiken-curry.jpg",
+        "recipe_id": 1,
+        "recipe_name": "Chicken Curry",
+        "short_description": "A delicious and aromatic chicken curry",
+        "ingredients": ["550 g chicken", "120 ml soy sauce", "200 g basil leaves", "400 g mushroom"],
+        "preparing_time": "30 min",
+        "calories": "320 calories"
+      },
+      {
+        "recipe_image": "https://i.ibb.co/DYQvdzy/Spaghetti-Bolognese.jpg",
+        "recipe_id": 2,
+        "recipe_name": "Spaghetti Bolognese",
+        "short_description": "Classic Italian pasta dish with meaty tomato sauce",
+        "ingredients": ["400 g spaghetti", "250 g ground beef", "200 g tomato sauce", "100 g grated Parmesan cheese"],
+        "preparing_time": "45 min",
+        "calories": "480 calories"
+      },
+      {
+        "recipe_image": "https://i.ibb.co/kKnGq18/vegetable-stir-fry.jpg",
+        "recipe_id": 3,
+        "recipe_name": "Vegetable Stir-Fry",
+        "short_description": "Healthy and colorful stir-fried vegetables",
+        "ingredients": ["300 g mixed vegetables (bell peppers, carrots, broccoli)", "150 g tofu", "50 ml soy sauce", "2 cloves garlic (minced)"],
+        "preparing_time": "25 min",
+        "calories": "180 calories"
+      },
+      {
+        "recipe_image": "https://i.ibb.co/89ksvmZ/Grilled-Salmon.jpg",
+        "recipe_id": 4,
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Tender and flavorful grilled salmon fillets",
+        "ingredients": ["4 salmon fillets", "50 ml olive oil", "1 lemon (sliced)", "Salt and pepper to taste"],
+        "preparing_time": "20 min",
+        "calories": "300 calories"
+      },
+      {
+        "recipe_image": "https://i.ibb.co/BC3gKYW/Caesar-Salad.jpg",
+        "recipe_id": 5,
+        "recipe_name": "Caesar Salad",
+        "short_description": "Classic Caesar salad with crisp romaine lettuce and tangy dressing",
+        "ingredients": ["1 head romaine lettuce", "100 g croutons", "50 g grated Parmesan cheese", "50 ml Caesar dressing"],
+        "preparing_time": "15 min",
+        "calories": "250 calories"
+      },
+      {
+        "recipe_image": "https://i.ibb.co/JqWBFk2/Vegetable-Soup.jpg",
+        "recipe_id": 6,
+        "recipe_name": "Vegetable Soup",
+        "short_description": "Hearty and comforting vegetable soup",
+        "ingredients": ["500 g mixed vegetables (carrots, potatoes, celery)", "1 liter vegetable broth", "2 cloves garlic (minced)", "50 g pasta shells"],
+        "preparing_time": "35 min",
+        "calories": "150 calories"
+      }
+      
+      
+      
+      
+      
+      
+]
