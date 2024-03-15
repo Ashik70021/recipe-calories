@@ -1,6 +1,6 @@
 import { CiClock1 } from "react-icons/ci";
 import { AiOutlineFire } from "react-icons/ai";
-const Recipe = ({ recipe }) => {
+const Recipe = ({ recipe, handleCookButton }) => {
     const { recipe_image, recipe_name, short_description, ingredients,
         preparing_time, calories } = recipe;
     const listItems = ingredients.map((item, idx) => <li key={idx}>{item}</li>);
@@ -28,7 +28,7 @@ const Recipe = ({ recipe }) => {
                     </div>
                 </div>
             </div>
-                <button className='m-2 py-3 px-6 text-[#150B2B] text-xl font-semibold rounded-[30px] bg-[#0BE58A]'>Want to Cook</button>
+                <button onClick={()=>handleCookButton(recipe)} className='m-2 py-3 px-6 text-[#150B2B] text-xl font-semibold rounded-[30px] bg-[#0BE58A]'>Want to Cook</button>
         </div>
     );
 };
