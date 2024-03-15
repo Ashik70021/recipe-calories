@@ -6,7 +6,7 @@ const Recipe = ({ recipe }) => {
     const listItems = ingredients.map((item, idx) => <li key={idx}>{item}</li>);
     return (
         <div className="card w-96 m-6 p-6 bg-base-100 shadow-xl">
-                <img className="w-full h-[230px]" src={recipe_image} alt=""/>
+                <img className="w-full h-[230px] rounded-2xl" src={recipe_image} alt=""/>
             <div className="card-body">
                     <h2 className="card-title text-3xl font-semibold text-[#282828]">{recipe_name}</h2>
                     <p className="mb-4 text-lg font-normal text-[#878787]">{short_description}</p>
