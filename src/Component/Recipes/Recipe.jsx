@@ -5,16 +5,16 @@ const Recipe = ({ recipe }) => {
         preparing_time, calories } = recipe;
     const listItems = ingredients.map((item, idx) => <li key={idx}>{item}</li>);
     return (
-        <div className="card w-96 m-6 p-6 bg-base-100 shadow-xl">
+        <div className="card border-2 w-96 m-6 p-6 bg-base-100 shadow-xl">
                 <img className="w-full h-[230px] rounded-2xl" src={recipe_image} alt=""/>
             <div className="card-body">
-                    <h2 className="card-title text-3xl font-semibold text-[#282828]">{recipe_name}</h2>
+                    <h2 className="card-title text-2xl font-semibold text-[#282828]">{recipe_name}</h2>
                     <p className="mb-4 text-lg font-normal text-[#878787]">{short_description}</p>
                     
                     <hr className="text-[#2828281A]" />
                     
-                    <h3 className="mt-6 text-2xl font-medium text-[#282828]">Ingredients: {ingredients.length}</h3>
-                    <ul className="text-lg font-normal text-[#878787]">
+                    <h3 className="mt-6 text-xl font-medium text-[#282828]">Ingredients: {ingredients.length}</h3>
+                    <ul className="text-lg font-normal text-[#878787] list-disc ml-8 space-y-2">
                         {listItems}
                     </ul>
                 <div className="flex gap-6 text-lg font-normal text-[#282828]">
