@@ -11,9 +11,16 @@ function App() {
   const[recipies, setRecipies] = useState([])
 
   const handleCookButton = (recipe) =>{
+    const isExists = recipies.find((p) => p.recipe_id == recipe.recipe_id);
+    if (!isExists) {
       setRecipies([...recipies, recipe]);
+    } else {
+      alert("Cart already exists");
+    }
   }
 
+
+  
   return (
     <>
       <Header></Header>
