@@ -21,9 +21,8 @@ function App() {
   }
 
   const handleRemove = (id) => {
-    console.log(id)
-    // const removeItem = recipies.filter((item) => item.recipe_id != id);
-    // setRecipies(removeItem);
+    const removeItem = recipies.filter((item) => item.recipe_id != id.recipe_id);
+    setRecipies(removeItem);
   };
 
 
@@ -32,7 +31,7 @@ function App() {
       <Header></Header>
       <Banner></Banner>
       <Ourrecipes></Ourrecipes>
-      <div className='flex justify-between'>
+      <div className='md:flex justify-between'>
         <Recipes handleCookButton={handleCookButton}
         ></Recipes>
         <WantToCooks recipies={recipies} handleRemove={handleRemove}></WantToCooks>
