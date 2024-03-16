@@ -15,7 +15,7 @@ const Recipes = ({handleCookButton}) => {
                 recipies.map((recipe, idx) => <Recipe
                 key={idx}
                 recipe ={recipe}
-                handleCookButton={handleCookButton}
+                handleCookButton = {handleCookButton}
                 ></Recipe>)
             }
         </div>
