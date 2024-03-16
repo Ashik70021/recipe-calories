@@ -1,4 +1,5 @@
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 import './App.css'
 import Banner from './Component/Banner/Banner'
@@ -15,12 +16,17 @@ function App() {
     if (!isExists) {
       setRecipies([...recipies, recipe]);
     } else {
-      alert("Cart already exists");
+      toast.error("Selected item alrady already exists");
     }
   }
 
+  const handleRemove = (id) => {
+    console.log(id)
+    // const removeItem = recipies.filter((item) => item.recipe_id != id);
+    // setRecipies(removeItem);
+  };
 
-  
+
   return (
     <>
       <Header></Header>
@@ -29,7 +35,8 @@ function App() {
       <div className='flex justify-between'>
         <Recipes handleCookButton={handleCookButton}
         ></Recipes>
-        <WantToCooks recipies={recipies}></WantToCooks>
+        <WantToCooks recipies={recipies} handleRemove={handleRemove}></WantToCooks>
+        <ToastContainer />
       </div>
     </>
   )

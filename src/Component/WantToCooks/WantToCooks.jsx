@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const WantToCooks = ({recipies}) => {
+const WantToCooks = ({recipies, handleRemove}) => {
      
 
     const [current, setCurrent] = useState([])
@@ -33,7 +33,7 @@ const WantToCooks = ({recipies}) => {
                         <h1 className="text-lg font-medium text-[#878787]">{recipe.preparing_time}</h1>
                         <div className="flex gap-2">
                             <h1 className="text-lg font-medium text-[#878787]">{recipe.calories}</h1>
-                            <button onClick={()=>handleCurrent(recipe)} className="bg-[#0BE58A]  text-[#150B2B] text-lg font-bold  px-4 rounded-2xl" type="button">Preparing</button>
+                            <button onClick={()=>{handleCurrent(recipe); ()=>handleRemove(recipe)}}className="bg-[#0BE58A]  text-[#150B2B] text-lg font-bold  px-4 rounded-2xl" type="button">Preparing</button>
                         </div>
                     </div>
                 ))}
