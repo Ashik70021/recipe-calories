@@ -10,7 +10,7 @@ const WantToCooks = ({recipies}) => {
      }
 
     return (
-        <div className="w-[50%] mt-6 ml-12 border-2 rounded-2xl text-center h-fit">
+        <div className="w-[50%] mt-6 ml-6 border-2 rounded-2xl text-center h-fit">
             
             {/* ************************** want to cook start ********************** */}
 
@@ -28,7 +28,7 @@ const WantToCooks = ({recipies}) => {
 
             <div className="mt-4 p-4 bg-[#28282808]">
                 {recipies.map((recipe, idx) => (
-                    <div key={idx} className=" grid grid-cols-3 m-6 p-4">
+                    <div key={idx} className=" grid grid-cols-3 m-6 ml-0 pl-0 p-4">
                         <h1 className="text-lg font-medium text-[#878787]">{recipe.recipe_name}</h1>
                         <h1 className="text-lg font-medium text-[#878787]">{recipe.preparing_time}</h1>
                         <div className="flex gap-2">
