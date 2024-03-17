@@ -16,7 +16,7 @@ function App() {
     if (!isExists) {
       setRecipies([...recipies, recipe]);
     } else {
-      toast.error("Selected item alrady already exists");
+      toast.error("Selected item already exists");
     }
   }
 
